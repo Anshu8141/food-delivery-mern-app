@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🍔 MERN Stack Food Delivery Website
 
 A production-ready Food Delivery Web Application built with MongoDB, Express.js, React.js, and Node.js.
