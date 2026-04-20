@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🍔 MERN Stack Food Delivery Website
 
 A production-ready Food Delivery Web Application built with MongoDB, Express.js, React.js, and Node.js.
@@ -259,3 +260,7 @@ Created as a professional MERN Stack project for college coursework and producti
 ## 📧 Support
 
 For issues or questions, please create an issue in the repository.
+=======
+# food-delivery-mern-app
+A full-stack MERN Food Delivery application with user panel, admin dashboard, cart system, and order management.
+>>>>>>> 9d3d6a1c833c1e2c5b4542e14fc033670bab22e0
