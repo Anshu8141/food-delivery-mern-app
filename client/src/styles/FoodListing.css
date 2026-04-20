@@ -1,0 +1,80 @@
+.food-listing {
+  margin: 2rem 0;
+}
+
+.listing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8c42 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.listing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.listing-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.listing-controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-box input,
+.listing-controls select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-box input {
+  width: 100%;
+}
+
+.listing-controls select {
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.foods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.no-foods {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 10px;
+}
+
+.no-foods p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .listing-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .foods-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .listing-header h1 {
+    font-size: 1.8rem;
+  }
+}

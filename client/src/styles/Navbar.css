@@ -1,0 +1,87 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(135deg, #ff7e5f, #ff9966);
+  padding: 14px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.nav-logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== LINKS ===== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* ===== BUTTONS ===== */
+.btn-login,
+.btn-signup,
+.btn-logout {
+  background: white;
+  color: #ff7e5f !important;
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-signup:hover,
+.btn-logout:hover {
+  background: #f4f4f4;
+  transform: translateY(-2px);
+}
+
+/* ===== CART ===== */
+.cart-btn {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 18px;
+  border-radius: 25px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.cart-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-logo a {
+    font-size: 1.3rem;
+  }
+}

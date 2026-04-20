@@ -1,0 +1,102 @@
+.admin-container {
+  display: flex;
+  /* container remains flex for fallback, but most layout now handled by sidebar/content positioning */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* ensure sidebar scrolls internally if content overflows */
+  overflow-y: auto;
+  border-right: 1px solid #2e3a4a; /* subtle dividing line */
+}
+
+/* shift main content to the right of fixed sidebar */
+.admin-content {
+  margin-left: 240px;
+  flex: 1;
+  padding: 30px;
+  background: #f8fafc;
+  overflow-y: auto;
+}
+
+.admin-title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.admin-nav a:hover {
+  background: #334155;
+  color: white;
+}
+
+.active-link {
+  background: #f97316;
+  color: white !important;
+}
+.admin-dashboard {
+  padding: 30px;
+  background: #f5f6fa;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #555;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.chart-container {
+  background: white;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
